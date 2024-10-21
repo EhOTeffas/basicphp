@@ -22,8 +22,14 @@
         echo  "$string2"; echo "$emoji2"
     ?>
     <p></p>
-    <?php echo " não há um pré-processamento do conteúdo quando se usa aspas simples" ?>
+    <?php echo " não há um pré-processamento do conteúdo quando se usa aspas simples \n "; echo "\n"; 
     
+    echo <<< TESTE
+    carambolas pq agora isso deu certo?
+    esse php é todo bugado.
+    TESTE;
+    ?>
+    <p></p>
     <!-- 
         Aspas duplas:
             " Exemplo " . " Um " => "ExemploUm"
