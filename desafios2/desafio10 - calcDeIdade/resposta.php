@@ -14,7 +14,7 @@
         ?>
         <form action="#" method="get">
             <label for="ano">Em que ano você nasceu?</label>
-            <input type="number" name="ano" id="ano" required>
+            <input type="number" name="ano" id="ano" required max="<?= $atual?>">
             <label for="ano2">Quer saber a sua idade em que ano? ( estamos em <?= $atual?> )</label>
             <input type="number" name="ano2" id="ano2" required>
             <input type="submit" value="Qual será a minha idade?">
