@@ -21,7 +21,7 @@
         
         <section>
             <h2>Totalizando tudo</h2>
-            <p>Analisando o valor que você digitou, <strong><?=$secs?> segundos</strong> equivalem a um total de: </p>
+            <p>Analisando o valor que você digitou, <strong><?= number_format($secs, 0, "," , ".")?> segundos</strong> equivalem a um total de: </p>
             <?php 
                 $semanas = (int)($secs/604800);
                 $dias = (($secs % 604800)/86400);
